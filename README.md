@@ -44,7 +44,7 @@ In outline, the procedure was:
 - Both the subsetted data and summary are output to text files using the `write.table` function.
 
 ## Output files
-The output files are placed in the folder "Output" under the working directory.  The script creates this folder if it does not already exist.
+The output files are placed in the working directory.
 The output files are:
 **subset.txt** - the subset of the data containing only mean() and std() variables.
 **means.txt** - the summary of the data in subset.txt with the mean of each variable for each activity and each subject.
@@ -57,4 +57,4 @@ The data in these files are "tidy" in that:
 - There is only one "obervational unit" (the activity for the subject) in the table.
 
 The files written out can be read into an R dataframe using the read.table function, for example:
-`mydata <- read.table("./Output/subset.txt")` 
+`mydata <- read.table("./subset.txt")` 
