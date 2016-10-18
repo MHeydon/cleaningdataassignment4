@@ -70,6 +70,6 @@
 					summarize_each(funs(mean))
 
 	## output the subset of data containing all mean and std variables to file
-write.table(datasubset,file = "./subset.txt")
+write.table(datasubset,file = "./subset.txt", row.name=FALSE)
 ## output the required summary dataset to file
-write.table(meandata,file = "./means.txt")
+write.table(meandata,file = "./means.txt",row.name=FALSE)
