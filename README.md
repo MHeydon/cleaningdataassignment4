@@ -57,4 +57,4 @@ The data in these files are "tidy" in that:
 - There is only one "obervational unit" (the activity for the subject) in the table.
 
 The files written out can be read into an R dataframe using the read.table function, for example:
-`mydata <- read.table("./subset.txt")` 
+`mydata <- read.table("./subset.txt", header = TRUE)` 
